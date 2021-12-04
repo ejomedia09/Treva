@@ -5,7 +5,7 @@
         watchSlidesProgress: true,
         breakpoints: {
             0: {
-                slidesPerView: 3,
+                slidesPerView: 1,
             },
             992: {
                 slidesPerView: 4,
@@ -25,13 +25,20 @@
             swiper: galleryThumbs
         },
     });
+    // change carousel item height
+    // gallery-top
     var productCarouselTopWidth = $('.gallery-top').outerWidth();
     $('.gallery-top').css('height', productCarouselTopWidth);
+
+    // gallery-thumbs
     var productCarouselThumbsItemWith = $('.gallery-thumbs .swiper-slide').outerWidth();
     $('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
+
+    // activation zoom plugin
     var $easyzoom = $('.easyzoom').easyZoom();
 	
-AOS.init({
+	
+	AOS.init({
 	easing: 'ease-out-back',
 	duration: 1000
 });
