@@ -1,0 +1,10 @@
+Used frameworks & plugins
+=============================
+
+Jquery V.3.4
+Bootstrap V.5
+font-awesome V.4.7
+swiper
+easyzoom
+AOS
+
